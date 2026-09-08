@@ -43,55 +43,87 @@
     </div>
   </header>
   
-<!-- Right Column: Story & Narrative -->
-      <div class="md:col-span-7 space-y-6 text-slate-300">
-        <div>
-          <h3 class="text-xl font-bold text-white mb-2">
-            Software Engineer & Quality Assurance Specialist
-          </h3>
-          <p class="leading-relaxed text-slate-400">
-            I specialize in designing and engineering scalable web systems with <span class="text-teal-400 font-medium">C# / .NET Core</span> and <span class="text-teal-400 font-medium">React</span>, backed by structured <span class="text-teal-400 font-medium">SQL</span> relational architectures. My engineering philosophy focuses on clean code, system reliability, and comprehensive quality assurance across every layer of the SDLC.
-          </p>
-        </div>
-
-        <!-- 3 Core Focus Pillars -->
-        <div class="grid sm:grid-cols-2 gap-4 pt-1">
-          <div class="bg-slate-900/80 border border-slate-800 p-3.5 rounded-xl">
-            <div class="flex items-center gap-2 text-teal-400 font-semibold text-sm mb-1">
-              <i class="fas fa-server text-xs"></i> Backend & Architecture
-            </div>
-            <p class="text-xs text-slate-400 leading-relaxed">
-              RESTful APIs, Entity Framework, business logic implementation, and efficient database normalization.
-            </p>
-          </div>
-
-          <div class="bg-slate-900/80 border border-slate-800 p-3.5 rounded-xl">
-            <div class="flex items-center gap-2 text-teal-400 font-semibold text-sm mb-1">
-              <i class="fas fa-vial-circle-check text-xs"></i> Quality Engineering
-            </div>
-            <p class="text-xs text-slate-400 leading-relaxed">
-              Test case design, defect tracking, black-box testing, and edge-case verification in Agile Scrum teams.
-            </p>
-          </div>
-        </div>
-
-        <p class="text-sm text-slate-400 leading-relaxed">
-          I enjoy solving non-trivial architectural problems, writing clean documentation, and creating reliable software that scales seamlessly from database schema to responsive user interface.
-        </p>
-
-        <!-- Profile Badges -->
-        <div class="pt-2 flex flex-wrap gap-2 text-xs">
-          <span class="bg-slate-900 border border-slate-800 text-slate-300 px-3 py-1.5 rounded-md font-mono flex items-center gap-1.5">
-            <i class="fas fa-location-dot text-teal-400"></i> Cairo, Egypt
-          </span>
-          <span class="bg-slate-900 border border-slate-800 text-teal-300 px-3 py-1.5 rounded-md font-mono flex items-center gap-1.5">
-            <i class="fas fa-code"></i> Full-Stack Development
-          </span>
-          <span class="bg-slate-900 border border-slate-800 text-emerald-300 px-3 py-1.5 rounded-md font-mono flex items-center gap-1.5">
-            <i class="fas fa-shield-halved"></i> Software Testing & QA
-          </span>
-        </div>
+<!-- About Me Section -->
+  <section id="about" class="py-20 border-t border-slate-900 bg-slate-950">
+    <div class="max-w-5xl mx-auto px-6">
+      
+      <div class="flex items-center gap-2 text-teal-400 font-semibold mb-10 text-sm tracking-wider uppercase">
+        <i class="fas fa-user text-xs"></i> About Me
       </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
+        
+        <!-- Left Column: Photo Card -->
+        <div class="md:col-span-4 flex justify-center">
+          <div class="relative w-60 h-60 md:w-64 md:h-64">
+            <!-- Glow background accent -->
+            <div class="absolute inset-0 bg-gradient-to-tr from-teal-500 to-emerald-500 rounded-2xl blur-md opacity-40"></div>
+            <!-- Image container -->
+            <div class="relative w-full h-full rounded-2xl overflow-hidden border-2 border-slate-800 bg-slate-900 shadow-xl">
+              <img 
+                src="profile.png" 
+                alt="Esraa Ibrahim" 
+                class="w-full h-full object-cover object-center"
+                onerror="this.src='https://ui-avatars.com/api/?name=Esraa+Ibrahim&background=0f172a&color=2dd4bf&size=256'"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: CS & QA Narrative -->
+        <div class="md:col-span-8 space-y-5">
+          <div>
+            <h3 class="text-2xl font-bold text-white mb-2">
+              Software Engineer & QA Specialist
+            </h3>
+            <p class="text-slate-300 leading-relaxed text-sm md:text-base">
+              I specialize in developing scalable web applications using <span class="text-teal-400 font-medium">C# / .NET Core</span> and <span class="text-teal-400 font-medium">React</span>, backed by structured <span class="text-teal-400 font-medium">SQL</span> relational architectures. My engineering approach balances robust backend logic with methodical quality assurance across every phase of development.
+            </p>
+          </div>
+
+          <!-- Feature Cards -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+            <div class="bg-slate-900/90 border border-slate-800 p-4 rounded-xl">
+              <div class="flex items-center gap-2 text-teal-400 font-semibold text-sm mb-1">
+                <i class="fas fa-server text-xs"></i> Backend & Architecture
+              </div>
+              <p class="text-xs text-slate-400 leading-relaxed">
+                RESTful APIs, Entity Framework, business logic implementation, and database normalization.
+              </p>
+            </div>
+
+            <div class="bg-slate-900/90 border border-slate-800 p-4 rounded-xl">
+              <div class="flex items-center gap-2 text-teal-400 font-semibold text-sm mb-1">
+                <i class="fas fa-vial-circle-check text-xs"></i> Quality Engineering
+              </div>
+              <p class="text-xs text-slate-400 leading-relaxed">
+                Comprehensive test plans, defect tracking, black-box testing, and edge-case verification in Agile Scrum.
+              </p>
+            </div>
+          </div>
+
+          <p class="text-xs md:text-sm text-slate-400 leading-relaxed">
+            Focused on writing clean, maintainable code, eliminating defects early, and building performant systems that scale reliably.
+          </p>
+
+          <!-- Badges -->
+          <div class="flex flex-wrap gap-2 pt-2 text-xs">
+            <span class="bg-slate-900 border border-slate-800 text-slate-300 px-3 py-1.5 rounded-lg font-mono flex items-center gap-1.5">
+              <i class="fas fa-location-dot text-teal-400"></i> Cairo, Egypt
+            </span>
+            <span class="bg-slate-900 border border-slate-800 text-teal-300 px-3 py-1.5 rounded-lg font-mono flex items-center gap-1.5">
+              <i class="fas fa-code"></i> Full-Stack (.NET & React)
+            </span>
+            <span class="bg-slate-900 border border-slate-800 text-emerald-300 px-3 py-1.5 rounded-lg font-mono flex items-center gap-1.5">
+              <i class="fas fa-shield-halved"></i> Software Testing & QA
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
 
   <!-- Skills Section -->
   <section id="skills" class="max-w-5xl mx-auto px-6 py-16 border-t border-slate-900">
