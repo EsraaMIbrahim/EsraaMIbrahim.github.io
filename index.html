@@ -27,8 +27,9 @@
             brand: {
               emerald: '#34d399',
               mint: '#6ee7b7',
-              dark: '#040711',
-              surface: '#080d1a',
+              cyan: '#22d3ee',
+              dark: '#030712',
+              surface: '#070d1a',
               card: '#0c1322',
               border: '#15213b'
             }
@@ -46,7 +47,7 @@
     .animate-marquee {
       display: flex;
       width: 200%;
-      animation: marquee 25s linear infinite;
+      animation: marquee 28s linear infinite;
     }
     .animate-marquee:hover {
       animation-play-state: paused;
@@ -57,12 +58,12 @@
 <body class="bg-brand-dark text-slate-200 font-sans antialiased selection:bg-brand-mint selection:text-black">
 
   <!-- Top Glass Bar -->
-  <nav class="sticky top-0 z-50 backdrop-blur-xl bg-brand-dark/85 border-b border-brand-border/60">
+  <nav class="sticky top-0 z-50 backdrop-blur-xl bg-brand-dark/85 border-b border-brand-border/70 shadow-[0_4px_30px_rgba(0,0,0,0.6)]">
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
       
       <!-- Monogram Tag -->
       <a href="#" class="flex items-center gap-3 group">
-        <div class="w-9 h-9 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-brand-mint font-mono font-bold text-xs tracking-tighter shadow-[0_0_15px_rgba(52,211,153,0.2)]">
+        <div class="w-9 h-9 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-brand-mint font-mono font-bold text-xs tracking-tighter shadow-[0_0_15px_rgba(52,211,153,0.25)] group-hover:scale-105 transition duration-300">
           EI
         </div>
         <div class="flex flex-col">
@@ -75,13 +76,13 @@
       <div class="hidden lg:flex items-center space-x-8 text-xs font-mono uppercase tracking-widest text-slate-400">
         <a href="#about" class="hover:text-brand-mint transition">01 About</a>
         <a href="#services" class="hover:text-brand-mint transition">02 Services</a>
-        <a href="#toolkit" class="hover:text-brand-mint transition">03 Toolkit</a>
+        <a href="#skills" class="hover:text-brand-mint transition">03 Toolkit</a>
         <a href="#projects" class="hover:text-brand-mint transition">04 Systems</a>
         <a href="#education" class="hover:text-brand-mint transition">05 Education</a>
       </div>
 
       <!-- Quick Action -->
-      <a href="#contact" class="text-xs font-mono px-4 py-2 rounded-full border border-slate-700 hover:border-brand-mint text-slate-200 hover:text-brand-mint transition flex items-center gap-2">
+      <a href="#contact" class="text-xs font-mono px-5 py-2.5 rounded-full border border-slate-700 hover:border-brand-mint text-slate-200 hover:text-brand-mint transition duration-300 flex items-center gap-2 bg-brand-card/60 shadow-sm">
         <span>Start conversation</span>
         <span class="text-brand-mint">↗</span>
       </a>
@@ -90,12 +91,16 @@
 
   <!-- Hero Section -->
   <header class="relative pt-24 pb-20 px-6 max-w-7xl mx-auto overflow-hidden">
-    <!-- Ambient Radial Glow -->
-    <div class="absolute -top-32 left-1/4 w-[500px] h-[500px] bg-gradient-to-tr from-emerald-500/15 via-cyan-500/10 to-transparent blur-[140px] pointer-events-none rounded-full"></div>
+    <!-- Ambient Radial Glows -->
+    <div class="absolute -top-32 left-1/4 w-[550px] h-[550px] bg-gradient-to-tr from-emerald-500/15 via-cyan-500/10 to-transparent blur-[140px] pointer-events-none rounded-full"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(#1e293b_1px,transparent_1px)] [background-size:28px_28px] opacity-20 pointer-events-none"></div>
 
     <!-- Floating status pill -->
     <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-brand-border text-slate-300 text-xs font-mono mb-10 shadow-sm">
-      <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+      <span class="relative flex h-2 w-2">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-400"></span>
+      </span>
       <span>Available for Contracts &amp; Engineering Roles</span>
       <span class="text-slate-500">↗</span>
     </div>
@@ -116,13 +121,22 @@
           Full-Stack .NET Developer &amp; Quality Engineer. I turn complex domain logic into resilient web APIs—so engineering teams ship with confidence, not crossed fingers.
         </p>
 
+        <!-- Core Tech Chips -->
+        <div class="flex flex-wrap gap-2 pt-2 text-xs font-mono text-slate-300">
+          <span class="px-3 py-1 rounded-md bg-slate-900/90 border border-brand-border text-cyan-300">C# / .NET 8</span>
+          <span class="px-3 py-1 rounded-md bg-slate-900/90 border border-brand-border text-cyan-300">React.js</span>
+          <span class="px-3 py-1 rounded-md bg-slate-900/90 border border-brand-border text-cyan-300">SQL Server</span>
+          <span class="px-3 py-1 rounded-md bg-slate-900/90 border border-brand-border text-brand-mint">Black-Box QA</span>
+          <span class="px-3 py-1 rounded-md bg-slate-900/90 border border-brand-border text-brand-mint">RESTful APIs</span>
+        </div>
+
         <div class="flex flex-wrap items-center gap-4 pt-4">
-          <a href="#services" class="px-7 py-3.5 rounded-full bg-brand-mint text-brand-dark font-bold text-xs uppercase tracking-wider hover:bg-emerald-300 transition flex items-center gap-2 shadow-[0_0_25px_rgba(110,231,183,0.3)]">
+          <a href="#services" class="px-7 py-3.5 rounded-full bg-gradient-to-r from-cyan-400 via-teal-300 to-emerald-400 text-slate-950 font-bold text-xs uppercase tracking-wider hover:opacity-95 transition duration-300 flex items-center gap-2 shadow-[0_0_25px_rgba(110,231,183,0.35)]">
             <span>Explore Services</span>
             <i class="fas fa-arrow-right text-[10px]"></i>
           </a>
-          <a href="https://github.com/EsraaMIbrahim" target="_blank" class="px-7 py-3.5 rounded-full bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-300 text-xs uppercase font-mono tracking-wider transition flex items-center gap-2">
-            <i class="fab fa-github text-sm text-brand-mint"></i> GitHub ↗
+          <a href="https://github.com/EsraaMIbrahim" target="_blank" class="px-7 py-3.5 rounded-full bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-300 text-xs uppercase font-mono tracking-wider transition duration-300 flex items-center gap-2">
+            <i class="fab fa-github text-sm text-brand-mint"></i> GitHub Profile ↗
           </a>
         </div>
       </div>
@@ -159,9 +173,9 @@
             <div class="mt-6 pt-4 border-t border-brand-border flex items-center justify-between text-[11px] text-slate-400">
               <div class="flex items-center gap-2">
                 <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-                <span>all pipelines green</span>
+                <span>all pipelines verified</span>
               </div>
-              <span class="font-mono text-slate-500">200 OK</span>
+              <span class="font-mono text-slate-500">HTTP 200 OK</span>
             </div>
 
           </div>
@@ -172,7 +186,7 @@
   </header>
 
   <!-- Infinite Marquee Strip -->
-  <div class="w-full border-y border-brand-border/80 bg-brand-card/40 py-4 overflow-hidden">
+  <div class="w-full border-y border-brand-border/80 bg-brand-surface py-4 overflow-hidden">
     <div class="animate-marquee font-mono text-xs uppercase tracking-widest text-slate-400">
       <span class="mx-6">Full-Stack .NET</span> <span class="text-brand-mint">✦</span>
       <span class="mx-6">Clean Architecture</span> <span class="text-brand-mint">✦</span>
@@ -189,19 +203,19 @@
   <section id="about" class="py-28 max-w-7xl mx-auto px-6">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
       
-      <!-- Left: Portrait with Clean Frame -->
-      <div class="lg:col-span-5">
-        <div class="relative max-w-sm mx-auto">
-          <div class="relative rounded-2xl overflow-hidden border border-brand-border bg-brand-card shadow-2xl group">
+      <!-- Left: Portrait with Glowing LED Frame -->
+      <div class="lg:col-span-5 flex justify-center">
+        <div class="relative group max-w-sm">
+          <div class="absolute -inset-1.5 rounded-full bg-gradient-to-tr from-cyan-400 via-teal-300 to-indigo-500 blur-md opacity-80 group-hover:opacity-100 transition duration-500"></div>
+          <div class="relative p-1 rounded-full bg-slate-950 border border-cyan-400/40 shadow-[0_0_25px_rgba(6,182,212,0.35)]">
             <img 
               src="profile.png" 
               alt="Esraa Ibrahim" 
-              class="w-full h-96 object-cover object-[center_30%] filter grayscale contrast-125 group-hover:grayscale-0 transition duration-700"
+              class="w-60 h-60 sm:w-72 sm:h-72 rounded-full object-cover object-[center_35%] filter brightness-105 contrast-105"
             />
-            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-brand-dark via-brand-dark/50 to-transparent p-6">
-              <p class="text-xs font-mono uppercase tracking-widest text-brand-mint">Esraa / Signal</p>
-              <p class="text-sm font-semibold text-white">Full-Stack &amp; QA Engineer</p>
-            </div>
+          </div>
+          <div class="absolute bottom-2 right-4 bg-slate-950/95 border border-cyan-500/40 text-cyan-300 text-[11px] font-mono px-3.5 py-1.5 rounded-full shadow-lg flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Open for Contracts
           </div>
         </div>
       </div>
@@ -217,7 +231,7 @@
 
         <div class="space-y-4 text-slate-400 text-base leading-relaxed">
           <p>
-            I'm Esraa Ibrahim, a software engineer who turns ambiguity into verified, resilient code. I focus on the gap between what developers write and what users break.
+            I'm Esraa Ibrahim, a software engineer who turns ambiguity into verified, resilient code. I focus on the critical gap between what developers write and what users break in production.
           </p>
           <p>
             My practice brings together two critical disciplines: building scalable backend services in <span class="text-white font-medium">C# / ASP.NET Core</span> and modern frontends in <span class="text-white font-medium">React</span>, backed by structured <span class="text-white font-medium">SQL</span> data layers—while enforcing methodical <span class="text-white font-medium">Quality Assurance</span> from Day 1.
@@ -253,7 +267,7 @@
     </div>
   </section>
 
-  <!-- SECTION 02: WHAT I OFFER (SERVICES WITH IMAGERY) -->
+  <!-- SECTION 02: SERVICES & CONTRACT DELIVERABLES (WITH IMAGERY) -->
   <section id="services" class="py-24 border-t border-brand-border bg-brand-surface">
     <div class="max-w-7xl mx-auto px-6">
       
@@ -264,16 +278,16 @@
           <span class="font-serif italic font-normal text-brand-mint">Protected against failures.</span>
         </h2>
         <p class="text-slate-400 text-sm mt-4">
-          Contract deliverables and engineering consulting designed for startups, software agencies, and product teams.
+          Contract deliverables and engineering consulting designed for startups, software development houses, and product teams.
         </p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         
         <!-- Service 1: Full-Stack Web Apps -->
-        <div class="rounded-3xl bg-brand-card border border-brand-border overflow-hidden hover:border-brand-mint/40 transition duration-500 flex flex-col justify-between group">
+        <div class="rounded-3xl bg-brand-card border border-brand-border overflow-hidden hover:border-brand-mint/40 transition duration-500 flex flex-col justify-between group shadow-lg">
           <div>
-            <!-- Image Header -->
+            <!-- Image Viewport -->
             <div class="h-44 w-full relative overflow-hidden bg-slate-950">
               <img 
                 src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" 
@@ -304,9 +318,9 @@
         </div>
 
         <!-- Service 2: QA & Test Engineering -->
-        <div class="rounded-3xl bg-brand-card border border-brand-border overflow-hidden hover:border-brand-mint/40 transition duration-500 flex flex-col justify-between group">
+        <div class="rounded-3xl bg-brand-card border border-brand-border overflow-hidden hover:border-brand-mint/40 transition duration-500 flex flex-col justify-between group shadow-lg">
           <div>
-            <!-- Image Header -->
+            <!-- Image Viewport -->
             <div class="h-44 w-full relative overflow-hidden bg-slate-950">
               <img 
                 src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" 
@@ -336,10 +350,10 @@
           </div>
         </div>
 
-        <!-- Service 3: Database & Performance -->
-        <div class="rounded-3xl bg-brand-card border border-brand-border overflow-hidden hover:border-brand-mint/40 transition duration-500 flex flex-col justify-between group">
+        <!-- Service 3: Database Architecture -->
+        <div class="rounded-3xl bg-brand-card border border-brand-border overflow-hidden hover:border-brand-mint/40 transition duration-500 flex flex-col justify-between group shadow-lg">
           <div>
-            <!-- Image Header -->
+            <!-- Image Viewport -->
             <div class="h-44 w-full relative overflow-hidden bg-slate-950">
               <img 
                 src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=800&q=80" 
@@ -374,8 +388,8 @@
     </div>
   </section>
 
-  <!-- SECTION 03: EDITORIAL TOOLKIT -->
-  <section id="toolkit" class="py-28 max-w-7xl mx-auto px-6">
+  <!-- SECTION 03: TECHNICAL TOOLKIT -->
+  <section id="skills" class="py-28 max-w-7xl mx-auto px-6">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
       
       <div class="lg:col-span-5 space-y-4">
@@ -385,11 +399,11 @@
           <span class="font-serif italic font-normal text-brand-mint">engineering stack.</span>
         </h2>
         <p class="text-slate-400 text-sm leading-relaxed pt-2">
-          Tools are only useful when they sharpen execution. I rely on a battle-tested stack for writing performant systems and catching defects.
+          Tools are only useful when they sharpen execution. I rely on a battle-tested stack for writing performant systems and catching defects before release.
         </p>
       </div>
 
-      <!-- Clean Indexed List -->
+      <!-- Indexed Accordion Stack -->
       <div class="lg:col-span-7 divide-y divide-brand-border border-y border-brand-border font-mono text-xs">
         
         <div class="py-4 flex items-center justify-between group hover:bg-brand-card/40 px-3 transition">
@@ -469,7 +483,7 @@
       </div>
 
       <!-- Project 1: Smart Pharmacy -->
-      <div class="rounded-3xl bg-brand-card border border-brand-border overflow-hidden hover:border-brand-mint/40 transition duration-500 mb-8">
+      <div class="rounded-3xl bg-brand-card border border-brand-border overflow-hidden hover:border-brand-mint/40 transition duration-500 mb-8 shadow-xl">
         <div class="grid grid-cols-1 lg:grid-cols-12">
           
           <div class="lg:col-span-7 p-8 sm:p-12 space-y-5 flex flex-col justify-between">
@@ -518,7 +532,7 @@
       </div>
 
       <!-- Project 2: Software QA Suite -->
-      <div class="rounded-3xl bg-brand-card border border-brand-border overflow-hidden hover:border-brand-mint/40 transition duration-500">
+      <div class="rounded-3xl bg-brand-card border border-brand-border overflow-hidden hover:border-brand-mint/40 transition duration-500 shadow-xl">
         <div class="grid grid-cols-1 lg:grid-cols-12">
           
           <div class="lg:col-span-7 p-8 sm:p-12 space-y-5 flex flex-col justify-between">
@@ -667,52 +681,123 @@
     </div>
   </section>
 
-  <!-- SECTION 06: CONTACT SECTION -->
-  <footer id="contact" class="py-28 max-w-7xl mx-auto px-6">
+  <!-- SECTION 06: CONTACT & TRANSMISSION -->
+  <footer id="contact" class="py-28 max-w-7xl mx-auto px-6 border-t border-brand-border bg-gradient-to-b from-brand-dark via-[#070b14] to-[#02050b]">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
       
-      <div class="lg:col-span-6 space-y-4">
+      <!-- Heading Column -->
+      <div class="lg:col-span-5 space-y-4">
         <span class="text-xs font-mono uppercase tracking-widest text-slate-400">06 Contact</span>
         <h2 class="text-5xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight">
           Let's build <br />
           <span class="font-serif italic font-normal text-brand-mint">together.</span>
         </h2>
-        <p class="text-slate-400 text-sm max-w-md pt-2">
-          Available for contract opportunities, full-stack systems engineering, or quality consulting.
+        <p class="text-slate-400 text-sm max-w-md pt-2 leading-relaxed">
+          Available for contract opportunities, full-stack systems engineering, or quality assurance consultations.
         </p>
+
+        <!-- Availability Notice -->
+        <div class="p-4 rounded-xl bg-brand-card/90 border border-brand-border text-xs text-slate-300 flex items-center gap-3 mt-6">
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse shrink-0"></span>
+          <span>Open for remote contracts &amp; engineering teams. Fast response &lt; 24h.</span>
+        </div>
       </div>
 
-      <div class="lg:col-span-6 space-y-4 font-mono text-xs">
-        <a href="mailto:esraamohamedibrahim01@gmail.com" class="p-6 rounded-2xl bg-brand-card border border-brand-border hover:border-brand-mint/40 transition flex items-center justify-between group block">
-          <div>
-            <p class="text-slate-500 uppercase tracking-widest text-[10px]">Direct Email</p>
-            <p class="text-sm font-bold text-white font-sans mt-1">esraamohamedibrahim01@gmail.com</p>
-          </div>
-          <span class="text-brand-mint group-hover:translate-x-1 transition-transform text-sm">↗</span>
-        </a>
+      <!-- Quick Action Channels & Form -->
+      <div class="lg:col-span-7 space-y-6">
+        
+        <!-- Contact Cards Row -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 font-mono text-xs">
+          
+          <a href="mailto:esraamohamedibrahim01@gmail.com" class="p-4 rounded-xl bg-brand-card border border-brand-border hover:border-brand-mint/50 transition duration-300 block group">
+            <p class="text-slate-500 uppercase tracking-widest text-[9px]">Email</p>
+            <p class="text-xs font-bold text-white font-sans mt-1 truncate">esraamohamedibrahim01@gmail.com</p>
+            <span class="text-brand-mint text-[11px] group-hover:translate-x-1 inline-block transition-transform mt-2">Send ↗</span>
+          </a>
 
-        <a href="https://linkedin.com/in/esraamibrahim" target="_blank" class="p-6 rounded-2xl bg-brand-card border border-brand-border hover:border-brand-mint/40 transition flex items-center justify-between group block">
-          <div>
-            <p class="text-slate-500 uppercase tracking-widest text-[10px]">LinkedIn Network</p>
-            <p class="text-sm font-bold text-white font-sans mt-1">linkedin.com/in/esraamibrahim</p>
-          </div>
-          <span class="text-brand-mint group-hover:translate-x-1 transition-transform text-sm">↗</span>
-        </a>
+          <a href="https://linkedin.com/in/esraamibrahim" target="_blank" class="p-4 rounded-xl bg-brand-card border border-brand-border hover:border-brand-mint/50 transition duration-300 block group">
+            <p class="text-slate-500 uppercase tracking-widest text-[9px]">LinkedIn</p>
+            <p class="text-xs font-bold text-white font-sans mt-1 truncate">esraamibrahim</p>
+            <span class="text-brand-mint text-[11px] group-hover:translate-x-1 inline-block transition-transform mt-2">Connect ↗</span>
+          </a>
 
-        <a href="https://github.com/EsraaMIbrahim" target="_blank" class="p-6 rounded-2xl bg-brand-card border border-brand-border hover:border-brand-mint/40 transition flex items-center justify-between group block">
-          <div>
-            <p class="text-slate-500 uppercase tracking-widest text-[10px]">Source Repositories</p>
-            <p class="text-sm font-bold text-white font-sans mt-1">github.com/EsraaMIbrahim</p>
-          </div>
-          <span class="text-brand-mint group-hover:translate-x-1 transition-transform text-sm">↗</span>
-        </a>
+          <a href="https://github.com/EsraaMIbrahim" target="_blank" class="p-4 rounded-xl bg-brand-card border border-brand-border hover:border-brand-mint/50 transition duration-300 block group">
+            <p class="text-slate-500 uppercase tracking-widest text-[9px]">GitHub</p>
+            <p class="text-xs font-bold text-white font-sans mt-1 truncate">EsraaMIbrahim</p>
+            <span class="text-brand-mint text-[11px] group-hover:translate-x-1 inline-block transition-transform mt-2">Repos ↗</span>
+          </a>
+
+        </div>
+
+        <!-- Working Formspree Contact Form -->
+        <div class="p-6 sm:p-8 rounded-2xl bg-brand-card border border-brand-border shadow-xl">
+          <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-mono text-slate-400 mb-1.5">Your Name</label>
+                <input 
+                  type="text" 
+                  name="name" 
+                  required 
+                  placeholder="e.g. Sarah Jenkins"
+                  class="w-full bg-slate-950 border border-brand-border focus:border-brand-mint focus:outline-none rounded-xl px-4 py-3 text-sm text-slate-200 placeholder-slate-600 transition"
+                />
+              </div>
+              <div>
+                <label class="block text-xs font-mono text-slate-400 mb-1.5">Your Email</label>
+                <input 
+                  type="email" 
+                  name="_replyto" 
+                  required 
+                  placeholder="name@company.com"
+                  class="w-full bg-slate-950 border border-brand-border focus:border-brand-mint focus:outline-none rounded-xl px-4 py-3 text-sm text-slate-200 placeholder-slate-600 transition"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-mono text-slate-400 mb-1.5">Subject / Project Scope</label>
+              <input 
+                type="text" 
+                name="subject" 
+                placeholder="Full-Stack Web App, QA Automation Suite, etc."
+                class="w-full bg-slate-950 border border-brand-border focus:border-brand-mint focus:outline-none rounded-xl px-4 py-3 text-sm text-slate-200 placeholder-slate-600 transition"
+              />
+            </div>
+
+            <div>
+              <label class="block text-xs font-mono text-slate-400 mb-1.5">Message</label>
+              <textarea 
+                name="message" 
+                rows="4" 
+                required 
+                placeholder="Tell me about your goals, timelines, or specifications..."
+                class="w-full bg-slate-950 border border-brand-border focus:border-brand-mint focus:outline-none rounded-xl px-4 py-3 text-sm text-slate-200 placeholder-slate-600 transition resize-none"
+              ></textarea>
+            </div>
+
+            <button 
+              type="submit" 
+              class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-gradient-to-r from-cyan-400 via-teal-300 to-emerald-400 text-slate-950 font-bold text-xs uppercase tracking-wider hover:opacity-95 transition duration-300 flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(110,231,183,0.3)]"
+            >
+              <span>Transmit Message</span>
+              <i class="fas fa-paper-plane text-[10px]"></i>
+            </button>
+          </form>
+        </div>
+
       </div>
 
     </div>
 
+    <!-- Bottom Copyright -->
     <div class="mt-24 pt-8 border-t border-brand-border flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 font-mono gap-4">
-      <p>© 2026 Esraa Ibrahim. Precision-built.</p>
-      <a href="#" class="hover:text-brand-mint transition">Back to Top ↑</a>
+      <p>© 2026 Esraa Ibrahim. Precision-engineered systems.</p>
+      <div class="flex items-center gap-4">
+        <span>Hosted on GitHub Pages</span>
+        <span class="w-1 h-1 rounded-full bg-slate-700"></span>
+        <a href="#" class="hover:text-brand-mint transition">Back to Top ↑</a>
+      </div>
     </div>
   </footer>
 
