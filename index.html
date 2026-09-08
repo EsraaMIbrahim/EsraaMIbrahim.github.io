@@ -44,80 +44,96 @@
   </header>
   
 <!-- About Me Section -->
-  <section id="about" class="py-20 border-t border-slate-900 bg-slate-950">
-    <div class="max-w-5xl mx-auto px-6">
+  <section id="about" class="py-24 border-t border-slate-900 bg-gradient-to-b from-slate-950 via-[#0a0f1d] to-slate-950">
+    <div class="max-w-6xl mx-auto px-6">
       
-      <div class="flex items-center gap-2 text-teal-400 font-semibold mb-10 text-sm tracking-wider uppercase">
-        <i class="fas fa-user text-xs"></i> About Me
+      <!-- Section Tag -->
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-500/30 text-cyan-400 font-mono text-xs tracking-widest uppercase mb-12">
+        <i class="fas fa-terminal text-[10px]"></i> Client-Focused Engineering
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         
-        <!-- Left Column: Photo Card -->
-        <div class="md:col-span-4 flex justify-center">
-          <div class="relative w-60 h-60 md:w-64 md:h-64">
-            <!-- Glow background accent -->
-            <div class="absolute inset-0 bg-gradient-to-tr from-teal-500 to-emerald-500 rounded-2xl blur-md opacity-40"></div>
-            <!-- Image container -->
-            <div class="relative w-full h-full rounded-2xl overflow-hidden border-2 border-slate-800 bg-slate-900 shadow-xl">
+        <!-- Left Column: Circular Glowing LED Portrait -->
+        <div class="lg:col-span-4 flex justify-center">
+          <div class="relative group">
+            <!-- Animated LED Halo Ring -->
+            <div class="absolute -inset-1.5 rounded-full bg-gradient-to-tr from-cyan-400 via-teal-300 to-indigo-500 blur-md opacity-80 group-hover:opacity-100 transition duration-500"></div>
+            <!-- Outer Ring Border -->
+            <div class="relative p-1 rounded-full bg-slate-950 border border-cyan-400/40 shadow-[0_0_25px_rgba(6,182,212,0.35)]">
               <img 
                 src="profile.png" 
                 alt="Esraa Ibrahim" 
-                class="w-full h-full object-cover object-center"
-                onerror="this.src='https://ui-avatars.com/api/?name=Esraa+Ibrahim&background=0f172a&color=2dd4bf&size=256'"
+                class="w-56 h-56 md:w-64 md:h-64 rounded-full object-cover object-top filter brightness-105 contrast-105"
               />
+            </div>
+            <!-- Status Badge -->
+            <div class="absolute bottom-2 right-4 bg-slate-950/90 border border-cyan-500/40 text-cyan-300 text-[11px] font-mono px-3 py-1 rounded-full shadow-lg flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Open for Contracts
             </div>
           </div>
         </div>
 
-        <!-- Right Column: CS & QA Narrative -->
-        <div class="md:col-span-8 space-y-5">
+        <!-- Right Column: Freelance Value Proposition -->
+        <div class="lg:col-span-8 space-y-6">
           <div>
-            <h3 class="text-2xl font-bold text-white mb-2">
-              Software Engineer & QA Specialist
+            <h3 class="text-2xl md:text-3xl font-bold text-white tracking-tight mb-3">
+              I build production-grade web systems and guarantee they work flawlessly before release.
             </h3>
             <p class="text-slate-300 leading-relaxed text-sm md:text-base">
-              I specialize in developing scalable web applications using <span class="text-teal-400 font-medium">C# / .NET Core</span> and <span class="text-teal-400 font-medium">React</span>, backed by structured <span class="text-teal-400 font-medium">SQL</span> relational architectures. My engineering approach balances robust backend logic with methodical quality assurance across every phase of development.
+              For growing businesses, tech startups, and product teams, software issues mean lost revenue and frustrated users. As a <span class="text-cyan-400 font-semibold">Full-Stack .NET Developer & QA Specialist</span>, I provide end-to-end delivery: architecting secure, scalable backend platforms while applying rigorous test engineering so your software runs smoothly from day one.
             </p>
           </div>
 
-          <!-- Feature Cards -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
-            <div class="bg-slate-900/90 border border-slate-800 p-4 rounded-xl">
-              <div class="flex items-center gap-2 text-teal-400 font-semibold text-sm mb-1">
-                <i class="fas fa-server text-xs"></i> Backend & Architecture
+          <!-- 3 Service Offerings for Clients / Freelancing -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-3 pt-1">
+            <div class="bg-slate-900/90 border border-slate-800/90 p-4 rounded-xl hover:border-cyan-500/40 transition">
+              <div class="text-cyan-400 font-semibold text-sm mb-1.5 flex items-center gap-2">
+                <i class="fas fa-cubes text-xs"></i> Full-Stack Build
               </div>
               <p class="text-xs text-slate-400 leading-relaxed">
-                RESTful APIs, Entity Framework, business logic implementation, and database normalization.
+                Scalable web portals and APIs using <strong>C# / .NET Core</strong>, <strong>React</strong>, and optimized <strong>SQL</strong> databases.
               </p>
             </div>
 
-            <div class="bg-slate-900/90 border border-slate-800 p-4 rounded-xl">
-              <div class="flex items-center gap-2 text-teal-400 font-semibold text-sm mb-1">
-                <i class="fas fa-vial-circle-check text-xs"></i> Quality Engineering
+            <div class="bg-slate-900/90 border border-slate-800/90 p-4 rounded-xl hover:border-cyan-500/40 transition">
+              <div class="text-teal-400 font-semibold text-sm mb-1.5 flex items-center gap-2">
+                <i class="fas fa-shield-halved text-xs"></i> Quality & Testing
               </div>
               <p class="text-xs text-slate-400 leading-relaxed">
-                Comprehensive test plans, defect tracking, black-box testing, and edge-case verification in Agile Scrum.
+                Comprehensive manual and automated test suites, black-box testing, and edge-case elimination before deployment.
+              </p>
+            </div>
+
+            <div class="bg-slate-900/90 border border-slate-800/90 p-4 rounded-xl hover:border-cyan-500/40 transition">
+              <div class="text-indigo-400 font-semibold text-sm mb-1.5 flex items-center gap-2">
+                <i class="fas fa-bolt text-xs"></i> System Audits & Fixes
+              </div>
+              <p class="text-xs text-slate-400 leading-relaxed">
+                Refactoring messy codebases, repairing slow endpoints, and resolving elusive production bugs under tight deadlines.
               </p>
             </div>
           </div>
 
-          <p class="text-xs md:text-sm text-slate-400 leading-relaxed">
-            Focused on writing clean, maintainable code, eliminating defects early, and building performant systems that scale reliably.
-          </p>
+          <!-- Freelance Value Badges & Actions -->
+          <div class="pt-2 flex flex-wrap items-center justify-between gap-4">
+            <div class="flex flex-wrap gap-2 text-xs">
+              <span class="bg-slate-900/90 border border-slate-800 text-slate-300 px-3 py-1.5 rounded-lg font-mono">
+                <i class="fas fa-check-circle text-cyan-400 mr-1"></i> Agile Delivery
+              </span>
+              <span class="bg-slate-900/90 border border-slate-800 text-slate-300 px-3 py-1.5 rounded-lg font-mono">
+                <i class="fas fa-clock text-cyan-400 mr-1"></i> Fast Turnaround
+              </span>
+              <span class="bg-slate-900/90 border border-slate-800 text-slate-300 px-3 py-1.5 rounded-lg font-mono">
+                <i class="fas fa-handshake text-cyan-400 mr-1"></i> Clear Communication
+              </span>
+            </div>
 
-          <!-- Badges -->
-          <div class="flex flex-wrap gap-2 pt-2 text-xs">
-            <span class="bg-slate-900 border border-slate-800 text-slate-300 px-3 py-1.5 rounded-lg font-mono flex items-center gap-1.5">
-              <i class="fas fa-location-dot text-teal-400"></i> Cairo, Egypt
-            </span>
-            <span class="bg-slate-900 border border-slate-800 text-teal-300 px-3 py-1.5 rounded-lg font-mono flex items-center gap-1.5">
-              <i class="fas fa-code"></i> Full-Stack (.NET & React)
-            </span>
-            <span class="bg-slate-900 border border-slate-800 text-emerald-300 px-3 py-1.5 rounded-lg font-mono flex items-center gap-1.5">
-              <i class="fas fa-shield-halved"></i> Software Testing & QA
-            </span>
+            <a href="mailto:esraa@example.com" class="inline-flex items-center gap-2 text-xs font-semibold text-cyan-400 hover:text-cyan-300 transition underline underline-offset-4">
+              Hire me for your next project <i class="fas fa-arrow-right"></i>
+            </a>
           </div>
+
         </div>
 
       </div>
