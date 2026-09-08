@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Esraa Ibrahim | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-teal-500 selection:text-black">
+
+  <!-- Navbar -->
+  <nav class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+      <span class="text-xl font-bold text-teal-400 font-mono">&lt;Esraa.dev /&gt;</span>
+      <div class="space-x-6 text-sm font-medium text-slate-300">
+        <a href="#about" class="hover:text-teal-400 transition">About</a>
+        <a href="#skills" class="hover:text-teal-400 transition">Skills</a>
+        <a href="#projects" class="hover:text-teal-400 transition">Projects</a>
+        <a href="#contact" class="hover:text-teal-400 transition">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="max-w-4xl mx-auto text-center py-24 px-6">
+    <div class="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-teal-300 uppercase bg-teal-900/40 border border-teal-500/30 rounded-full">
+      Available for Opportunities
+    </div>
+    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6">
+      Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-emerald-400">Esraa Ibrahim</span>
+    </h1>
+    <p class="text-slate-400 text-lg sm:text-xl max-w-2xl mx-auto mb-8 leading-relaxed">
+      Full-Stack Developer & Software Quality Engineer bridging strong analytical thinking with scalable web systems (.NET & React).
+    </p>
+    <div class="flex justify-center gap-4">
+      <a href="#projects" class="bg-teal-500 hover:bg-teal-400 text-slate-950 font-bold px-6 py-3 rounded-lg transition shadow-lg shadow-teal-500/20">
+        Explore Projects
+      </a>
+      <a href="https://github.com/EsraaMIbrahim" target="_blank" class="border border-slate-700 hover:border-slate-500 px-6 py-3 rounded-lg font-medium transition flex items-center gap-2">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+    </div>
+  </header>
+
+  <!-- Skills Section -->
+  <section id="skills" class="max-w-5xl mx-auto px-6 py-16 border-t border-slate-900">
+    <h2 class="text-2xl font-bold mb-8 text-teal-400 flex items-center gap-2">
+      <i class="fas fa-layer-group text-sm"></i> Technical Toolkit
+    </h2>
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      <div class="bg-slate-900/60 border border-slate-800 p-4 rounded-xl">
+        <h3 class="text-slate-200 font-semibold mb-2">Backend</h3>
+        <p class="text-sm text-slate-400">C#, .NET Core, RESTful APIs, SQL</p>
+      </div>
+      <div class="bg-slate-900/60 border border-slate-800 p-4 rounded-xl">
+        <h3 class="text-slate-200 font-semibold mb-2">Frontend</h3>
+        <p class="text-sm text-slate-400">React, JavaScript, HTML5, CSS3/Tailwind</p>
+      </div>
+      <div class="bg-slate-900/60 border border-slate-800 p-4 rounded-xl">
+        <h3 class="text-slate-200 font-semibold mb-2">Quality & QA</h3>
+        <p class="text-sm text-slate-400">Manual Testing, Jira, Black-Box, Agile/Scrum</p>
+      </div>
+      <div class="bg-slate-900/60 border border-slate-800 p-4 rounded-xl">
+        <h3 class="text-slate-200 font-semibold mb-2">Computational</h3>
+        <p class="text-sm text-slate-400">Python, R, Git/GitHub, Linux CLI</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects -->
+  <section id="projects" class="max-w-5xl mx-auto px-6 py-16 border-t border-slate-900">
+    <h2 class="text-2xl font-bold mb-8 text-teal-400 flex items-center gap-2">
+      <i class="fas fa-code text-sm"></i> Featured Projects
+    </h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      
+      <!-- Project 1 -->
+      <div class="bg-slate-900/70 border border-slate-800 hover:border-teal-500/50 transition p-6 rounded-2xl flex flex-col justify-between">
+        <div>
+          <h3 class="text-xl font-bold text-white mb-2">Smart Pharmacy Management System</h3>
+          <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+            Full-stack system built with React and .NET 8 featuring expiry discounting, clinical interaction checks, and role-based access control.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="text-xs font-mono bg-slate-800 text-teal-300 px-2.5 py-1 rounded">React.js</span>
+            <span class="text-xs font-mono bg-slate-800 text-teal-300 px-2.5 py-1 rounded">.NET 8</span>
+            <span class="text-xs font-mono bg-slate-800 text-teal-300 px-2.5 py-1 rounded">C#</span>
+            <span class="text-xs font-mono bg-slate-800 text-teal-300 px-2.5 py-1 rounded">SQL</span>
+          </div>
+        </div>
+        <div class="flex gap-4 text-sm font-medium">
+          <a href="https://github.com/EsraaMIbrahim/Smart-Pharmacy-Management-System" target="_blank" class="flex items-center gap-1.5 text-teal-400 hover:underline">
+            <i class="fab fa-github"></i> View Repository
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="bg-slate-900/70 border border-slate-800 hover:border-teal-500/50 transition p-6 rounded-2xl flex flex-col justify-between">
+        <div>
+          <h3 class="text-xl font-bold text-white mb-2">Bioinformatics & Data Pipeline</h3>
+          <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+            Automated pipeline for sequence alignment, phylogenetic tree reconstruction, and genomic data analytics.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="text-xs font-mono bg-slate-800 text-teal-300 px-2.5 py-1 rounded">Python</span>
+            <span class="text-xs font-mono bg-slate-800 text-teal-300 px-2.5 py-1 rounded">R</span>
+            <span class="text-xs font-mono bg-slate-800 text-teal-300 px-2.5 py-1 rounded">Linux</span>
+          </div>
+        </div>
+        <div class="flex gap-4 text-sm font-medium">
+          <a href="https://github.com/EsraaMIbrahim" target="_blank" class="flex items-center gap-1.5 text-teal-400 hover:underline">
+            <i class="fab fa-github"></i> View Profile
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer / Contact -->
+  <footer id="contact" class="border-t border-slate-800 text-center py-12 px-6">
+    <h3 class="text-xl font-bold text-white mb-2">Let's Connect</h3>
+    <p class="text-slate-400 text-sm mb-6">Feel free to reach out for collaborations or project discussions.</p>
+    <div class="flex justify-center gap-6 text-xl text-slate-400 mb-8">
+      <a href="https://github.com/EsraaMIbrahim" target="_blank" class="hover:text-teal-400 transition"><i class="fab fa-github"></i></a>
+      <a href="mailto:esraa@example.com" class="hover:text-teal-400 transition"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p class="text-xs text-slate-600 font-mono">© 2026 Esraa Ibrahim. Hosted on GitHub Pages.</p>
+  </footer>
+
+</body>
+</html>
