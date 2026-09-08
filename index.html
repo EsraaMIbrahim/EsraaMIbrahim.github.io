@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Esraa Ibrahim — Full-Stack .NET & QA Engineer</title>
+  <title>Esraa Ibrahim — Full-Stack .NET & QA Systems Engineer</title>
   
-  <!-- Fonts: Plus Jakarta Sans + Newsreader (Editorial Serif) -->
+  <!-- Fonts: Plus Jakarta Sans + Newsreader (Editorial Serif) + JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -27,9 +27,10 @@
             brand: {
               emerald: '#34d399',
               mint: '#6ee7b7',
-              dark: '#05080f',
-              card: '#0a0f1d',
-              border: '#162238'
+              dark: '#030712',
+              surface: '#070d1a',
+              card: '#0c1322',
+              border: '#15213b'
             }
           }
         }
@@ -45,7 +46,7 @@
     .animate-marquee {
       display: flex;
       width: 200%;
-      animation: marquee 25s linear infinite;
+      animation: marquee 28s linear infinite;
     }
     .animate-marquee:hover {
       animation-play-state: paused;
@@ -55,13 +56,12 @@
 
 <body class="bg-brand-dark text-slate-200 font-sans antialiased selection:bg-brand-mint selection:text-black">
 
-  <!-- Top Glass Bar -->
-  <nav class="sticky top-0 z-50 backdrop-blur-xl bg-brand-dark/80 border-b border-brand-border/60">
+  <!-- Top Glass Navigation Bar -->
+  <nav class="sticky top-0 z-50 backdrop-blur-xl bg-brand-dark/85 border-b border-brand-border/60">
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
       
-      <!-- Monogram Tag -->
       <a href="#" class="flex items-center gap-3 group">
-        <div class="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-brand-mint font-mono font-bold text-xs tracking-tighter">
+        <div class="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-brand-mint font-mono font-bold text-xs">
           EI
         </div>
         <div class="flex flex-col">
@@ -70,94 +70,89 @@
         </div>
       </a>
 
-      <!-- Minimal Nav Links -->
       <div class="hidden md:flex items-center space-x-8 text-xs font-mono uppercase tracking-widest text-slate-400">
-        <a href="#about" class="hover:text-brand-mint transition">About</a>
-        <a href="#philosophy" class="hover:text-brand-mint transition">Practice</a>
-        <a href="#toolkit" class="hover:text-brand-mint transition">Toolkit</a>
-        <a href="#projects" class="hover:text-brand-mint transition">Systems</a>
+        <a href="#story" class="hover:text-brand-mint transition">01 Story</a>
+        <a href="#services" class="hover:text-brand-mint transition">02 Services</a>
+        <a href="#systems" class="hover:text-brand-mint transition">03 Work</a>
+        <a href="#education" class="hover:text-brand-mint transition">04 Education</a>
+        <a href="#contact" class="hover:text-brand-mint transition">05 Contact</a>
       </div>
 
-      <!-- Quick Action -->
       <a href="#contact" class="text-xs font-mono px-4 py-2 rounded-full border border-slate-700 hover:border-brand-mint text-slate-200 hover:text-brand-mint transition flex items-center gap-2">
-        <span>Start conversation</span>
+        <span>Connect</span>
         <span class="text-brand-mint">↗</span>
       </a>
     </div>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- Hero Section (Narrative Hook) -->
   <header class="relative pt-24 pb-20 px-6 max-w-7xl mx-auto">
     
-    <!-- Floating status pill -->
     <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-brand-border text-slate-300 text-xs font-mono mb-10">
       <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-      <span>Available for Contracts &amp; Engineering Roles</span>
+      <span>Available for Full-Stack &amp; QA Engineering Roles</span>
       <span class="text-slate-500">↗</span>
     </div>
 
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
       
-      <!-- Headline & Hook -->
       <div class="lg:col-span-7 space-y-6">
-        <p class="text-xs font-mono uppercase tracking-widest text-emerald-400">Esraa Ibrahim</p>
+        <p class="text-xs font-mono uppercase tracking-widest text-emerald-400">Architect &amp; Quality Engineer</p>
         
         <h1 class="text-5xl sm:text-7xl lg:text-8xl font-extrabold tracking-tight text-white leading-[1.05]">
-          I build what <br />
-          <span class="font-serif italic font-normal text-brand-mint underline decoration-brand-border underline-offset-8">scales</span>, test what <br />
-          fails.
+          Engineering <br />
+          <span class="font-serif italic font-normal text-brand-mint underline decoration-brand-border underline-offset-8">systems</span> with zero <br />
+          blind spots.
         </h1>
 
         <p class="text-slate-400 text-base sm:text-lg max-w-xl leading-relaxed pt-2">
-          Full-Stack .NET Developer &amp; Quality Engineer. I turn complex domain logic into resilient web APIs—so engineering teams ship with confidence, not crossed fingers.
+          I bridge full-stack architecture (<span class="text-slate-200 font-medium">.NET 8 &amp; React</span>) with methodical quality engineering. From normalized SQL databases to edge-case test matrices, I make software resilient under pressure.
         </p>
 
         <div class="flex flex-wrap items-center gap-4 pt-4">
-          <a href="#projects" class="px-6 py-3.5 rounded-full bg-brand-mint text-brand-dark font-bold text-xs uppercase tracking-wider hover:bg-emerald-300 transition flex items-center gap-2 shadow-[0_0_25px_rgba(110,231,183,0.25)]">
-            <span>See my systems</span>
+          <a href="#services" class="px-6 py-3.5 rounded-full bg-brand-mint text-brand-dark font-bold text-xs uppercase tracking-wider hover:bg-emerald-300 transition flex items-center gap-2 shadow-[0_0_25px_rgba(110,231,183,0.25)]">
+            <span>Explore Services</span>
             <i class="fas fa-arrow-right text-[10px]"></i>
           </a>
           <a href="https://github.com/EsraaMIbrahim" target="_blank" class="px-6 py-3.5 rounded-full bg-transparent hover:bg-slate-900 border border-slate-700 text-slate-300 text-xs uppercase font-mono tracking-wider transition flex items-center gap-2">
-            <i class="fab fa-github"></i> GitHub ↗
+            <i class="fab fa-github"></i> GitHub Profile ↗
           </a>
         </div>
       </div>
 
-      <!-- Interactive Code Terminal Console Graphic -->
+      <!-- Live Interactive Terminal Visual -->
       <div class="lg:col-span-5">
         <div class="relative rounded-2xl bg-gradient-to-b from-brand-border to-brand-card p-[1px] shadow-2xl">
           <div class="rounded-2xl bg-brand-dark/95 p-6 backdrop-blur-md font-mono text-xs">
             
-            <!-- Window Bar -->
             <div class="flex items-center justify-between pb-4 mb-4 border-b border-brand-border text-slate-500 text-[11px]">
               <div class="flex items-center gap-2">
                 <span class="w-2.5 h-2.5 rounded-full bg-rose-500/80"></span>
                 <span class="w-2.5 h-2.5 rounded-full bg-amber-500/80"></span>
                 <span class="w-2.5 h-2.5 rounded-full bg-emerald-500/80"></span>
               </div>
-              <span class="text-slate-400">system-health.json</span>
+              <span class="text-slate-400">system-diagnostic.json</span>
               <span>&lt;/&gt;</span>
             </div>
 
-            <!-- Terminal Payload -->
             <div class="space-y-1.5 text-slate-300 leading-relaxed">
-              <p class="text-slate-500">// Production Readiness Check</p>
+              <p class="text-slate-500">// Real-time System Verification</p>
               <p>{</p>
-              <p class="pl-4"><span class="text-cyan-400">"engineer"</span>: <span class="text-brand-mint">"Esraa Ibrahim"</span>,</p>
-              <p class="pl-4"><span class="text-cyan-400">"architecture"</span>: <span class="text-emerald-300">"ASP.NET Core 8 + React"</span>,</p>
-              <p class="pl-4"><span class="text-cyan-400">"database"</span>: <span class="text-emerald-300">"SQL Server (Normalized)"</span>,</p>
-              <p class="pl-4"><span class="text-cyan-400">"testCoverage"</span>: <span class="text-brand-mint">"Black-Box + Edge Verification"</span>,</p>
-              <p class="pl-4"><span class="text-cyan-400">"status"</span>: <span class="text-brand-mint">"PASS (0 Unhandled Exceptions)"</span>,</p>
-              <p class="pl-4"><span class="text-cyan-400">"deploymentRisk"</span>: <span class="text-emerald-400">"Minimal"</span></p>
+              <p class="pl-4"><span class="text-cyan-400">"candidate"</span>: <span class="text-brand-mint">"Esraa Ibrahim"</span>,</p>
+              <p class="pl-4"><span class="text-cyan-400">"architecture"</span>: <span class="text-emerald-300">"ASP.NET Core (.NET 8) + React"</span>,</p>
+              <p class="pl-4"><span class="text-cyan-400">"dataTier"</span>: <span class="text-emerald-300">"SQL Server Relational Design"</span>,</p>
+              <p class="pl-4"><span class="text-cyan-400">"testingMethodology"</span>: <span class="text-brand-mint">"Black-Box, BVA &amp; Agile QA"</span>,</p>
+              <p class="pl-4"><span class="text-cyan-400">"qualityGate"</span>: <span class="text-brand-mint">"Verified (0 Uncaught Edge Cases)"</span>,</p>
+              <p class="pl-4"><span class="text-cyan-400">"availability"</span>: <span class="text-emerald-400">"Open for Projects"</span></p>
               <p>}</p>
             </div>
 
             <div class="mt-6 pt-4 border-t border-brand-border flex items-center justify-between text-[11px] text-slate-400">
               <div class="flex items-center gap-2">
                 <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-                <span>all pipelines green</span>
+                <span>all pipelines verified</span>
               </div>
-              <span class="font-mono text-slate-500">200 OK</span>
+              <span class="font-mono text-slate-500">HTTP 200 OK</span>
             </div>
 
           </div>
@@ -167,25 +162,24 @@
     </div>
   </header>
 
-  <!-- Infinite Marquee Strip -->
-  <div class="w-full border-y border-brand-border/80 bg-brand-card/40 py-4 overflow-hidden">
+  <!-- Kinetic Marquee Strip -->
+  <div class="w-full border-y border-brand-border/80 bg-brand-surface py-4 overflow-hidden">
     <div class="animate-marquee font-mono text-xs uppercase tracking-widest text-slate-400">
-      <span class="mx-6">Full-Stack .NET</span> <span class="text-brand-mint">✦</span>
-      <span class="mx-6">Clean Architecture</span> <span class="text-brand-mint">✦</span>
-      <span class="mx-6">Zero-Defect QA</span> <span class="text-brand-mint">✦</span>
-      <span class="mx-6">RESTful APIs</span> <span class="text-brand-mint">✦</span>
-      <span class="mx-6">SQL Database Optimization</span> <span class="text-brand-mint">✦</span>
-      <span class="mx-6">React.js Interfaces</span> <span class="text-brand-mint">✦</span>
-      <span class="mx-6">Test Automation &amp; Edge Cases</span> <span class="text-brand-mint">✦</span>
+      <span class="mx-6">ASP.NET Core Web APIs</span> <span class="text-brand-mint">✦</span>
+      <span class="mx-6">Zero-Defect Quality Assurance</span> <span class="text-brand-mint">✦</span>
+      <span class="mx-6">React.js Component Architecture</span> <span class="text-brand-mint">✦</span>
+      <span class="mx-6">SQL Relational Modeling</span> <span class="text-brand-mint">✦</span>
+      <span class="mx-6">Black-Box Test Matrices</span> <span class="text-brand-mint">✦</span>
       <span class="mx-6">Agile Scrum Delivery</span> <span class="text-brand-mint">✦</span>
+      <span class="mx-6">Jira Defect Lifecycle Management</span> <span class="text-brand-mint">✦</span>
     </div>
   </div>
 
-  <!-- About Section with Editorial Styling -->
-  <section id="about" class="py-28 max-w-7xl mx-auto px-6">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+  <!-- CHAPTER 01: STORY & ABOUT -->
+  <section id="story" class="py-28 max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
       
-      <!-- Left: Portrait with Clean Frame -->
+      <!-- Portrait Card -->
       <div class="lg:col-span-5">
         <div class="relative max-w-sm mx-auto">
           <div class="relative rounded-2xl overflow-hidden border border-brand-border bg-brand-card shadow-2xl">
@@ -194,127 +188,126 @@
               alt="Esraa Ibrahim" 
               class="w-full h-96 object-cover object-[center_30%] filter grayscale contrast-125 hover:grayscale-0 transition duration-700"
             />
-            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-brand-dark via-brand-dark/40 to-transparent p-6">
-              <p class="text-xs font-mono uppercase tracking-widest text-brand-mint">Esraa / Signal</p>
-              <p class="text-sm font-semibold text-white">Full-Stack &amp; QA Engineer</p>
+            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-brand-dark via-brand-dark/50 to-transparent p-6">
+              <p class="text-xs font-mono uppercase tracking-widest text-brand-mint">Esraa / Focus</p>
+              <p class="text-sm font-semibold text-white">Full-Stack .NET &amp; QA Engineer</p>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Right: Editorial Narrative -->
-      <div class="lg:col-span-7 space-y-8">
+      <!-- Narrative -->
+      <div class="lg:col-span-7 space-y-6">
         <div>
-          <span class="text-xs font-mono uppercase tracking-widest text-slate-400">01 About Me</span>
+          <span class="text-xs font-mono uppercase tracking-widest text-slate-400">01 Narrative</span>
           <h2 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight mt-2">
-            Obsessed with <span class="font-serif italic font-normal text-brand-mint">how systems behave</span> under pressure.
+            The story behind <span class="font-serif italic font-normal text-brand-mint">the code.</span>
           </h2>
         </div>
 
-        <div class="space-y-4 text-slate-400 text-base leading-relaxed">
+        <div class="space-y-4 text-slate-300 text-base leading-relaxed">
           <p>
-            I'm Esraa Ibrahim, a software engineer who turns ambiguity into verified, resilient code. I focus on the gap between what developers write and what users break.
+            My engineering work started from a simple realization: code that looks clean on paper can still collapse when hit with real-world user workflows and unhandled edge cases.
           </p>
           <p>
-            My practice brings together two critical disciplines: building scalable backend services in <span class="text-white font-medium">C# / ASP.NET Core</span> and modern frontends in <span class="text-white font-medium">React</span>, backed by structured <span class="text-white font-medium">SQL</span> data layers—while enforcing methodical <span class="text-white font-medium">Quality Assurance</span> from Day 1.
+            I built my technical foundation by pairing comprehensive full-stack development—writing clean <span class="text-white font-medium">C# / ASP.NET Core</span> APIs, modular <span class="text-white font-medium">React</span> frontends, and normalized <span class="text-white font-medium">SQL databases</span>—with rigorous Software Quality Assurance standards.
+          </p>
+          <p>
+            I approach software from both sides of the table: as a builder who understands system internals, and as a quality engineer who systematically tries to break them before your users do.
           </p>
         </div>
 
-        <!-- Metric Grid -->
         <div class="grid grid-cols-3 gap-6 pt-4 border-t border-brand-border text-left">
           <div>
-            <span class="text-xs font-mono uppercase text-slate-500">Focus</span>
-            <p class="text-sm font-bold text-white mt-1">.NET &amp; QA</p>
+            <span class="text-xs font-mono uppercase text-slate-500">Core Stack</span>
+            <p class="text-sm font-bold text-white mt-1">.NET 8 &amp; React</p>
           </div>
           <div>
-            <span class="text-xs font-mono uppercase text-slate-500">Methodology</span>
-            <p class="text-sm font-bold text-white mt-1">Agile &amp; Zero-Defect</p>
+            <span class="text-xs font-mono uppercase text-slate-500">QA Discipline</span>
+            <p class="text-sm font-bold text-white mt-1">Manual &amp; Black-Box</p>
           </div>
           <div>
             <span class="text-xs font-mono uppercase text-slate-500">Location</span>
             <p class="text-sm font-bold text-white mt-1">Cairo / Remote</p>
           </div>
         </div>
-
-        <div class="pt-4 flex items-center gap-6">
-          <a href="#contact" class="px-6 py-3 rounded-full bg-brand-mint text-brand-dark font-bold text-xs uppercase tracking-wider hover:bg-emerald-300 transition">
-            Let's connect ↗
-          </a>
-          <a href="https://github.com/EsraaMIbrahim" target="_blank" class="text-xs font-mono text-slate-400 hover:text-white transition">
-            View GitHub profile ↗
-          </a>
-        </div>
       </div>
 
     </div>
   </section>
 
-  <!-- Philosophy / "What I Do" (Like Your Friend's 3 Pillars) -->
-  <section id="philosophy" class="py-24 border-t border-brand-border bg-brand-card/30">
+  <!-- CHAPTER 02: WHAT I OFFER (SERVICES) -->
+  <section id="services" class="py-24 border-t border-brand-border bg-brand-surface">
     <div class="max-w-7xl mx-auto px-6">
       
       <div class="max-w-2xl mb-16">
-        <span class="text-xs font-mono uppercase tracking-widest text-slate-400">02 Practice</span>
+        <span class="text-xs font-mono uppercase tracking-widest text-slate-400">02 Services &amp; Capabilities</span>
         <h2 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight mt-2">
-          Less friction. <br />
-          <span class="font-serif italic font-normal text-brand-mint">More stability.</span>
+          Engineered for scale. <br />
+          <span class="font-serif italic font-normal text-brand-mint">Protected against failures.</span>
         </h2>
         <p class="text-slate-400 text-sm mt-4">
-          Software shouldn't just run—it should withstand edge cases, high concurrency, and real-world user abuse without silent errors.
+          Direct engineering deliverables designed for product teams, software agencies, and business platforms.
         </p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         
-        <!-- Card 1 -->
-        <div class="p-8 rounded-2xl bg-brand-card border border-brand-border hover:border-brand-mint/40 transition duration-300 flex flex-col justify-between group">
+        <!-- Service 1 -->
+        <div class="p-8 rounded-2xl bg-brand-card border border-brand-border hover:border-brand-mint/40 transition duration-300 flex flex-col justify-between">
           <div>
-            <div class="w-10 h-10 rounded-xl bg-slate-900 border border-brand-border flex items-center justify-center text-brand-mint mb-6">
-              <i class="fas fa-layer-group text-sm"></i>
+            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-brand-border flex items-center justify-center text-brand-mint mb-6">
+              <i class="fas fa-server text-base"></i>
             </div>
-            <span class="text-[11px] font-mono text-slate-500 uppercase tracking-widest">01 / Architect</span>
-            <h3 class="text-xl font-bold text-white mt-2 mb-3">Build the backbone.</h3>
-            <p class="text-xs text-slate-400 leading-relaxed">
-              Design RESTful APIs, business rules, and normalized database schemas that handle transactional volume without latency spikes.
+            <span class="text-[11px] font-mono text-slate-500 uppercase tracking-widest">Service / 01</span>
+            <h3 class="text-xl font-bold text-white mt-2 mb-3">Full-Stack Web Architecture</h3>
+            <p class="text-xs text-slate-400 leading-relaxed mb-6">
+              Complete end-to-end web system builds. Responsive user interfaces wired into scalable RESTful APIs with structured relational data storage.
             </p>
+            <ul class="space-y-2 text-xs text-slate-300 border-t border-brand-border pt-4">
+              <li class="flex items-center gap-2"><i class="fas fa-check text-brand-mint text-[10px]"></i> ASP.NET Core &amp; C# REST APIs</li>
+              <li class="flex items-center gap-2"><i class="fas fa-check text-brand-mint text-[10px]"></i> React.js Frontends &amp; State Handling</li>
+              <li class="flex items-center gap-2"><i class="fas fa-check text-brand-mint text-[10px]"></i> Entity Framework &amp; SQL Server</li>
+            </ul>
           </div>
-          <a href="#projects" class="inline-flex items-center gap-1 text-xs font-mono text-brand-mint hover:underline mt-8">
-            See architecture ↗
-          </a>
         </div>
 
-        <!-- Card 2 -->
-        <div class="p-8 rounded-2xl bg-brand-card border border-brand-border hover:border-brand-mint/40 transition duration-300 flex flex-col justify-between group">
+        <!-- Service 2 -->
+        <div class="p-8 rounded-2xl bg-brand-card border border-brand-border hover:border-brand-mint/40 transition duration-300 flex flex-col justify-between">
           <div>
-            <div class="w-10 h-10 rounded-xl bg-slate-900 border border-brand-border flex items-center justify-center text-brand-mint mb-6">
-              <i class="fas fa-vial text-sm"></i>
+            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-brand-border flex items-center justify-center text-brand-mint mb-6">
+              <i class="fas fa-shield-halved text-base"></i>
             </div>
-            <span class="text-[11px] font-mono text-slate-500 uppercase tracking-widest">02 / Verify</span>
-            <h3 class="text-xl font-bold text-white mt-2 mb-3">Attack assumptions.</h3>
-            <p class="text-xs text-slate-400 leading-relaxed">
-              Explore beyond the happy path. Test boundary values, invalid payloads, and race conditions before code ever touches production.
+            <span class="text-[11px] font-mono text-slate-500 uppercase tracking-widest">Service / 02</span>
+            <h3 class="text-xl font-bold text-white mt-2 mb-3">Quality Assurance &amp; Testing</h3>
+            <p class="text-xs text-slate-400 leading-relaxed mb-6">
+              Preventing release failures before code reaches end-users. Systematic test plans, boundary value exploration, and rigorous regression passes.
             </p>
+            <ul class="space-y-2 text-xs text-slate-300 border-t border-brand-border pt-4">
+              <li class="flex items-center gap-2"><i class="fas fa-check text-brand-mint text-[10px]"></i> Black-Box &amp; Functional Test Design</li>
+              <li class="flex items-center gap-2"><i class="fas fa-check text-brand-mint text-[10px]"></i> Postman API Collection Testing</li>
+              <li class="flex items-center gap-2"><i class="fas fa-check text-brand-mint text-[10px]"></i> Jira Defect Logging &amp; Agile Triage</li>
+            </ul>
           </div>
-          <a href="#toolkit" class="inline-flex items-center gap-1 text-xs font-mono text-brand-mint hover:underline mt-8">
-            My test approach ↗
-          </a>
         </div>
 
-        <!-- Card 3 -->
-        <div class="p-8 rounded-2xl bg-brand-card border border-brand-border hover:border-brand-mint/40 transition duration-300 flex flex-col justify-between group">
+        <!-- Service 3 -->
+        <div class="p-8 rounded-2xl bg-brand-card border border-brand-border hover:border-brand-mint/40 transition duration-300 flex flex-col justify-between">
           <div>
-            <div class="w-10 h-10 rounded-xl bg-slate-900 border border-brand-border flex items-center justify-center text-brand-mint mb-6">
-              <i class="fas fa-shield-halved text-sm"></i>
+            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-brand-border flex items-center justify-center text-brand-mint mb-6">
+              <i class="fas fa-database text-base"></i>
             </div>
-            <span class="text-[11px] font-mono text-slate-500 uppercase tracking-widest">03 / Deliver</span>
-            <h3 class="text-xl font-bold text-white mt-2 mb-3">Build release trust.</h3>
-            <p class="text-xs text-slate-400 leading-relaxed">
-              Actionable Jira documentation, reproducible bug steps, and regression safety nets so teams deploy fearlessly.
+            <span class="text-[11px] font-mono text-slate-500 uppercase tracking-widest">Service / 03</span>
+            <h3 class="text-xl font-bold text-white mt-2 mb-3">Database Design &amp; Audits</h3>
+            <p class="text-xs text-slate-400 leading-relaxed mb-6">
+              Clean relational schemas designed for consistency and data integrity. Audit existing structures for normalization and slow operations.
             </p>
+            <ul class="space-y-2 text-xs text-slate-300 border-t border-brand-border pt-4">
+              <li class="flex items-center gap-2"><i class="fas fa-check text-brand-mint text-[10px]"></i> Relational Schema Architecture (ERD)</li>
+              <li class="flex items-center gap-2"><i class="fas fa-check text-brand-mint text-[10px]"></i> 3NF Normalization &amp; Constraints</li>
+              <li class="flex items-center gap-2"><i class="fas fa-check text-brand-mint text-[10px]"></i> Scripted Data Cleansing &amp; Extraction</li>
+            </ul>
           </div>
-          <a href="#contact" class="inline-flex items-center gap-1 text-xs font-mono text-brand-mint hover:underline mt-8">
-            Work together ↗
-          </a>
         </div>
 
       </div>
@@ -322,196 +315,263 @@
     </div>
   </section>
 
-  <!-- Editorial Toolkit List (Like Your Friend's Accordion) -->
-  <section id="toolkit" class="py-28 max-w-7xl mx-auto px-6">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
-      
-      <div class="lg:col-span-5 space-y-4">
-        <span class="text-xs font-mono uppercase tracking-widest text-slate-400">03 Toolkit</span>
-        <h2 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight">
-          A practical <br />
-          <span class="font-serif italic font-normal text-brand-mint">engineering stack.</span>
+  <!-- CHAPTER 03: VISUAL PROJECT SYSTEMS (WITH SCREENSHOT PLACEHOLDERS) -->
+  <section id="systems" class="py-28 max-w-7xl mx-auto px-6">
+    
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+      <div>
+        <span class="text-xs font-mono uppercase tracking-widest text-slate-400">03 Systems &amp; Deployments</span>
+        <h2 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight mt-2">
+          Visual <span class="font-serif italic font-normal text-brand-mint">case studies.</span>
         </h2>
-        <p class="text-slate-400 text-sm leading-relaxed pt-2">
-          Tools are only useful when they sharpen execution. I rely on a battle-tested stack for writing performant systems and catching defects.
-        </p>
+      </div>
+      <p class="text-slate-400 text-sm max-w-md mt-4 md:mt-0 font-mono">
+        Architected for business requirements. Verified through test suites.
+      </p>
+    </div>
+
+    <div class="space-y-12">
+
+      <!-- Project 1: Smart Pharmacy -->
+      <div class="rounded-3xl bg-brand-card border border-brand-border overflow-hidden hover:border-brand-mint/40 transition duration-500">
+        <div class="grid grid-cols-1 lg:grid-cols-12">
+          
+          <div class="lg:col-span-6 p-8 sm:p-12 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-3 mb-4">
+                <span class="text-xs font-mono uppercase px-3 py-1 rounded-full bg-slate-900 text-brand-mint border border-brand-border">Full-Stack Web App</span>
+                <span class="text-xs font-mono text-slate-500">Production Ready</span>
+              </div>
+              <h3 class="text-2xl sm:text-3xl font-bold text-white mb-3">Smart Pharmacy Management System</h3>
+              <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                A centralized inventory and dispensing management platform. Implemented automated near-expiry discounting logic to cut stock loss, clinical drug interaction alerts, and role-based access control (RBAC).
+              </p>
+              <div class="space-y-2 text-xs text-slate-300 font-mono">
+                <div class="flex items-center gap-2"><i class="fas fa-terminal text-brand-mint text-[10px]"></i> ASP.NET Core 8 Web API &amp; Entity Framework</div>
+                <div class="flex items-center gap-2"><i class="fas fa-terminal text-brand-mint text-[10px]"></i> Normalized SQL Database Schema</div>
+                <div class="flex items-center gap-2"><i class="fas fa-terminal text-brand-mint text-[10px]"></i> React.js Dynamic Management Interface</div>
+              </div>
+            </div>
+
+            <div class="pt-8">
+              <a href="https://github.com/EsraaMIbrahim/Smart-Pharmacy-Management-System" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-slate-900 border border-slate-700 hover:border-brand-mint text-slate-200 hover:text-brand-mint text-xs font-mono uppercase tracking-wider transition">
+                <span>View Repository</span>
+                <span>↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Visual Showcase Area -->
+          <div class="lg:col-span-6 bg-slate-950 border-t lg:border-t-0 lg:border-l border-brand-border p-6 sm:p-8 flex items-center justify-center">
+            <div class="w-full h-72 sm:h-80 rounded-2xl overflow-hidden border border-brand-border relative group bg-slate-900">
+              <img 
+                src="project-pharmacy.png" 
+                alt="Smart Pharmacy System Interface" 
+                class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-500"
+                onerror="this.src='https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80'"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/90 via-transparent to-transparent flex items-end p-6">
+                <span class="text-xs font-mono text-brand-mint bg-brand-dark/80 px-3 py-1 rounded-md border border-brand-border">Live System Architecture</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
 
-      <!-- Clean Indexed List -->
-      <div class="lg:col-span-7 divide-y divide-brand-border border-y border-brand-border font-mono text-xs">
-        
-        <div class="py-4 flex items-center justify-between group hover:bg-brand-card/40 px-3 transition">
-          <div class="flex items-center gap-6">
-            <span class="text-slate-500">01</span>
+      <!-- Project 2: Software QA & Test Artifacts -->
+      <div class="rounded-3xl bg-brand-card border border-brand-border overflow-hidden hover:border-brand-mint/40 transition duration-500">
+        <div class="grid grid-cols-1 lg:grid-cols-12">
+          
+          <div class="lg:col-span-6 p-8 sm:p-12 flex flex-col justify-between">
             <div>
-              <p class="text-sm font-bold text-white font-sans">ASP.NET Core &amp; C#</p>
-              <p class="text-slate-400 text-[11px]">Backend APIs, Entity Framework, Business Logic</p>
+              <div class="flex items-center gap-3 mb-4">
+                <span class="text-xs font-mono uppercase px-3 py-1 rounded-full bg-slate-900 text-emerald-400 border border-brand-border">Quality Engineering</span>
+                <span class="text-xs font-mono text-slate-500">Test Artifacts</span>
+              </div>
+              <h3 class="text-2xl sm:text-3xl font-bold text-white mb-3">Comprehensive QA &amp; Regression Test Suite</h3>
+              <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                End-to-end quality assurance suite covering requirements traceability, functional edge-case discovery, and defect lifecycle management under an Agile Scrum framework.
+              </p>
+              <div class="space-y-2 text-xs text-slate-300 font-mono">
+                <div class="flex items-center gap-2"><i class="fas fa-terminal text-brand-mint text-[10px]"></i> Boundary Value Analysis &amp; Equivalence Partitioning</div>
+                <div class="flex items-center gap-2"><i class="fas fa-terminal text-brand-mint text-[10px]"></i> Postman API Verification Collections</div>
+                <div class="flex items-center gap-2"><i class="fas fa-terminal text-brand-mint text-[10px]"></i> Jira Defect Reports &amp; Severity Classification</div>
+              </div>
+            </div>
+
+            <div class="pt-8">
+              <a href="https://github.com/EsraaMIbrahim" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-slate-900 border border-slate-700 hover:border-brand-mint text-slate-200 hover:text-brand-mint text-xs font-mono uppercase tracking-wider transition">
+                <span>Explore QA Artifacts</span>
+                <span>↗</span>
+              </a>
             </div>
           </div>
-          <span class="text-slate-500 group-hover:text-brand-mint transition">↗</span>
-        </div>
 
-        <div class="py-4 flex items-center justify-between group hover:bg-brand-card/40 px-3 transition">
-          <div class="flex items-center gap-6">
-            <span class="text-slate-500">02</span>
-            <div>
-              <p class="text-sm font-bold text-white font-sans">React.js &amp; Tailwind CSS</p>
-              <p class="text-slate-400 text-[11px]">Modern interfaces, Component architecture, State</p>
+          <!-- Visual Showcase Area -->
+          <div class="lg:col-span-6 bg-slate-950 border-t lg:border-t-0 lg:border-l border-brand-border p-6 sm:p-8 flex items-center justify-center">
+            <div class="w-full h-72 sm:h-80 rounded-2xl overflow-hidden border border-brand-border relative group bg-slate-900">
+              <img 
+                src="project-qa.png" 
+                alt="QA Test Suite Dashboard" 
+                class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-500"
+                onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80'"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/90 via-transparent to-transparent flex items-end p-6">
+                <span class="text-xs font-mono text-brand-mint bg-brand-dark/80 px-3 py-1 rounded-md border border-brand-border">Test Matrices &amp; Defect Triage</span>
+              </div>
             </div>
           </div>
-          <span class="text-slate-500 group-hover:text-brand-mint transition">↗</span>
-        </div>
 
-        <div class="py-4 flex items-center justify-between group hover:bg-brand-card/40 px-3 transition">
-          <div class="flex items-center gap-6">
-            <span class="text-slate-500">03</span>
-            <div>
-              <p class="text-sm font-bold text-white font-sans">SQL Server &amp; Relational Schemas</p>
-              <p class="text-slate-400 text-[11px]">Data integrity, Query optimization, Migrations</p>
-            </div>
-          </div>
-          <span class="text-slate-500 group-hover:text-brand-mint transition">↗</span>
         </div>
-
-        <div class="py-4 flex items-center justify-between group hover:bg-brand-card/40 px-3 transition">
-          <div class="flex items-center gap-6">
-            <span class="text-slate-500">04</span>
-            <div>
-              <p class="text-sm font-bold text-white font-sans">Postman &amp; API Verification</p>
-              <p class="text-slate-400 text-[11px]">Contract testing, Automated status validation</p>
-            </div>
-          </div>
-          <span class="text-slate-500 group-hover:text-brand-mint transition">↗</span>
-        </div>
-
-        <div class="py-4 flex items-center justify-between group hover:bg-brand-card/40 px-3 transition">
-          <div class="flex items-center gap-6">
-            <span class="text-slate-500">05</span>
-            <div>
-              <p class="text-sm font-bold text-white font-sans">Jira &amp; Agile QA Lifecycle</p>
-              <p class="text-slate-400 text-[11px]">Test matrices, Bug triage, Requirements traceability</p>
-            </div>
-          </div>
-          <span class="text-slate-500 group-hover:text-brand-mint transition">↗</span>
-        </div>
-
       </div>
 
     </div>
   </section>
 
-  <!-- Featured Systems Section -->
-  <section id="projects" class="py-24 border-t border-brand-border bg-brand-card/20">
+  <!-- CHAPTER 04: EDUCATION & SPECIALIZED TRAINING TIMELINE -->
+  <section id="education" class="py-28 border-t border-brand-border bg-brand-surface">
     <div class="max-w-7xl mx-auto px-6">
       
-      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
-        <div>
-          <span class="text-xs font-mono uppercase tracking-widest text-slate-400">04 Proof of Work</span>
-          <h2 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight mt-2">
-            Selected <span class="font-serif italic font-normal text-brand-mint">deployments.</span>
-          </h2>
-        </div>
-        <p class="text-slate-400 text-sm max-w-md mt-4 md:mt-0 font-mono">
-          Architected for scale. Verified with rigor.
+      <div class="max-w-2xl mb-16">
+        <span class="text-xs font-mono uppercase tracking-widest text-slate-400">04 Foundations</span>
+        <h2 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight mt-2">
+          Academic degrees &amp; <br />
+          <span class="font-serif italic font-normal text-brand-mint">technical credentials.</span>
+        </h2>
+        <p class="text-slate-400 text-sm mt-4">
+          Rigorous academic grounding spanning computer science diplomas, computational data science, and certified software testing.
         </p>
       </div>
 
-      <!-- Project Row 1 -->
-      <div class="p-8 sm:p-12 rounded-3xl bg-brand-card border border-brand-border hover:border-brand-mint/40 transition duration-500 mb-8">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-          <div class="lg:col-span-7 space-y-4">
-            <div class="flex items-center gap-3">
-              <span class="text-xs font-mono uppercase px-3 py-1 rounded-full bg-slate-900 text-brand-mint border border-brand-border">Full-Stack Platform</span>
-              <span class="text-xs font-mono text-slate-500">Production Ready</span>
-            </div>
-            <h3 class="text-2xl sm:text-3xl font-bold text-white">Smart Pharmacy Management System</h3>
-            <p class="text-slate-400 text-sm leading-relaxed">
-              Enterprise management application handling medicine stock lifecycles, automated expiry discount algorithms, and role-based operational permissions (RBAC).
-            </p>
-            <div class="flex flex-wrap gap-2 font-mono text-xs pt-2">
-              <span class="px-2.5 py-1 bg-slate-900 border border-brand-border text-slate-300 rounded">React.js</span>
-              <span class="px-2.5 py-1 bg-slate-900 border border-brand-border text-slate-300 rounded">.NET 8</span>
-              <span class="px-2.5 py-1 bg-slate-900 border border-brand-border text-slate-300 rounded">C#</span>
-              <span class="px-2.5 py-1 bg-slate-900 border border-brand-border text-slate-300 rounded">SQL Server</span>
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Timeline Column -->
+        <div class="lg:col-span-8 space-y-8 border-l border-brand-border pl-6 sm:pl-8 ml-2">
+          
+          <!-- Item 1: CS Diploma -->
+          <div class="relative group">
+            <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-3.5 h-3.5 rounded-full bg-brand-dark border-2 border-brand-mint group-hover:scale-125 transition-transform"></div>
+            <div class="p-6 rounded-2xl bg-brand-card border border-brand-border hover:border-brand-mint/40 transition">
+              <div class="flex flex-wrap justify-between items-center gap-2 mb-2">
+                <h3 class="text-lg font-bold text-white">Diploma in Computer Science</h3>
+                <span class="text-xs font-mono px-2.5 py-1 rounded bg-slate-900 border border-brand-border text-brand-mint">Cairo University</span>
+              </div>
+              <p class="text-xs text-slate-400 leading-relaxed">
+                Focused coursework on data structures, algorithms, object-oriented design patterns, database architecture, and computer systems.
+              </p>
             </div>
           </div>
-          <div class="lg:col-span-5 flex lg:justify-end">
-            <a href="https://github.com/EsraaMIbrahim/Smart-Pharmacy-Management-System" target="_blank" class="px-6 py-3 rounded-full bg-slate-900 border border-slate-700 hover:border-brand-mint text-slate-200 hover:text-brand-mint text-xs font-mono uppercase tracking-wider transition flex items-center gap-2">
-              <span>View Repository</span>
-              <span>↗</span>
-            </a>
-          </div>
-        </div>
-      </div>
 
-      <!-- Project Row 2 -->
-      <div class="p-8 sm:p-12 rounded-3xl bg-brand-card border border-brand-border hover:border-brand-mint/40 transition duration-500">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-          <div class="lg:col-span-7 space-y-4">
-            <div class="flex items-center gap-3">
-              <span class="text-xs font-mono uppercase px-3 py-1 rounded-full bg-slate-900 text-emerald-400 border border-brand-border">Quality Engineering</span>
-              <span class="text-xs font-mono text-slate-500">Full SDLC Suite</span>
-            </div>
-            <h3 class="text-2xl sm:text-3xl font-bold text-white">Software QA &amp; Regression Test Artifacts</h3>
-            <p class="text-slate-400 text-sm leading-relaxed">
-              Complete test artifact repository featuring boundary value analysis matrices, Postman API collections, and comprehensive bug tracking workflows in Agile Scrum.
-            </p>
-            <div class="flex flex-wrap gap-2 font-mono text-xs pt-2">
-              <span class="px-2.5 py-1 bg-slate-900 border border-brand-border text-slate-300 rounded">Manual Testing</span>
-              <span class="px-2.5 py-1 bg-slate-900 border border-brand-border text-slate-300 rounded">Postman</span>
-              <span class="px-2.5 py-1 bg-slate-900 border border-brand-border text-slate-300 rounded">Jira</span>
-              <span class="px-2.5 py-1 bg-slate-900 border border-brand-border text-slate-300 rounded">Agile QA</span>
+          <!-- Item 2: DEPI Software Testing Track -->
+          <div class="relative group">
+            <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-3.5 h-3.5 rounded-full bg-brand-dark border-2 border-emerald-400 group-hover:scale-125 transition-transform"></div>
+            <div class="p-6 rounded-2xl bg-brand-card border border-brand-border hover:border-brand-mint/40 transition">
+              <div class="flex flex-wrap justify-between items-center gap-2 mb-2">
+                <h3 class="text-lg font-bold text-white">Digital Egypt Pioneers Initiative (DEPI)</h3>
+                <span class="text-xs font-mono px-2.5 py-1 rounded bg-slate-900 border border-brand-border text-emerald-300">Software Testing Track</span>
+              </div>
+              <p class="text-xs text-slate-400 leading-relaxed">
+                Intensive professional training in software quality assurance, black-box test design, test case matrices, bug reporting in Jira, and Agile Scrum methodologies.
+              </p>
             </div>
           </div>
-          <div class="lg:col-span-5 flex lg:justify-end">
-            <a href="https://github.com/EsraaMIbrahim" target="_blank" class="px-6 py-3 rounded-full bg-slate-900 border border-slate-700 hover:border-brand-mint text-slate-200 hover:text-brand-mint text-xs font-mono uppercase tracking-wider transition flex items-center gap-2">
-              <span>Explore GitHub</span>
-              <span>↗</span>
-            </a>
+
+          <!-- Item 3: Bioinformatics Diploma -->
+          <div class="relative group">
+            <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-3.5 h-3.5 rounded-full bg-brand-dark border-2 border-indigo-400 group-hover:scale-125 transition-transform"></div>
+            <div class="p-6 rounded-2xl bg-brand-card border border-brand-border hover:border-brand-mint/40 transition">
+              <div class="flex flex-wrap justify-between items-center gap-2 mb-2">
+                <h3 class="text-lg font-bold text-white">Diploma in Bioinformatics</h3>
+                <span class="text-xs font-mono px-2.5 py-1 rounded bg-slate-900 border border-brand-border text-indigo-300">Nile University</span>
+              </div>
+              <p class="text-xs text-slate-400 leading-relaxed">
+                Computational data pipelines, algorithmic sequence alignment, Python and R data processing, and Linux terminal pipeline automation.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 4: Bachelor's Degree -->
+          <div class="relative group">
+            <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-3.5 h-3.5 rounded-full bg-brand-dark border-2 border-slate-600 group-hover:scale-125 transition-transform"></div>
+            <div class="p-6 rounded-2xl bg-brand-card border border-brand-border hover:border-brand-mint/40 transition">
+              <div class="flex flex-wrap justify-between items-center gap-2 mb-2">
+                <h3 class="text-lg font-bold text-white">Bachelor's Degree</h3>
+                <span class="text-xs font-mono px-2.5 py-1 rounded bg-slate-900 border border-brand-border text-slate-400">Tanta University</span>
+              </div>
+              <p class="text-xs text-slate-400 leading-relaxed">
+                Developed analytical discipline, experimental design methodologies, and strict quality control mindsets.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Sidebar Summary Badge -->
+        <div class="lg:col-span-4 space-y-4">
+          <div class="p-6 rounded-2xl bg-brand-card border border-brand-border">
+            <h4 class="text-sm font-bold text-white font-mono uppercase tracking-wider mb-4">Academic Synergy</h4>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">
+              Combining formal computer science principles with computational data processing and quality engineering standards gives me a multidimensional approach to system design and edge-case prevention.
+            </p>
+            <div class="space-y-2 text-xs font-mono text-slate-300">
+              <div class="flex items-center gap-2"><span class="text-brand-mint">✓</span> Strong Algorithmic Thinking</div>
+              <div class="flex items-center gap-2"><span class="text-brand-mint">✓</span> High-Integrity Test Execution</div>
+              <div class="flex items-center gap-2"><span class="text-brand-mint">✓</span> Cross-Disciplinary Problem Solving</div>
+            </div>
           </div>
         </div>
+
       </div>
 
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- CHAPTER 05: CONTACT / TRANSMISSION -->
   <footer id="contact" class="py-28 max-w-7xl mx-auto px-6">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
       
       <div class="lg:col-span-6 space-y-4">
-        <span class="text-xs font-mono uppercase tracking-widest text-slate-400">05 Contact</span>
+        <span class="text-xs font-mono uppercase tracking-widest text-slate-400">05 Transmission</span>
         <h2 class="text-5xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight">
-          Let's build <br />
-          <span class="font-serif italic font-normal text-brand-mint">together.</span>
+          Ready to build <br />
+          <span class="font-serif italic font-normal text-brand-mint">together?</span>
         </h2>
-        <p class="text-slate-400 text-sm max-w-md pt-2">
-          Available for contract opportunities, full-stack systems engineering, or quality consulting.
+        <p class="text-slate-400 text-sm max-w-md pt-2 leading-relaxed">
+          Open for full-time engineering positions, freelance software contracts, and quality assurance consultations. Let's discuss your system requirements.
         </p>
       </div>
 
       <div class="lg:col-span-6 space-y-4 font-mono text-xs">
         <a href="mailto:esraamohamedibrahim01@gmail.com" class="p-6 rounded-2xl bg-brand-card border border-brand-border hover:border-brand-mint/40 transition flex items-center justify-between group block">
           <div>
-            <p class="text-slate-500 uppercase tracking-widest text-[10px]">Direct Email</p>
+            <p class="text-slate-500 uppercase tracking-widest text-[10px]">Electronic Mail</p>
             <p class="text-sm font-bold text-white font-sans mt-1">esraamohamedibrahim01@gmail.com</p>
           </div>
-          <span class="text-brand-mint group-hover:translate-x-1 transition-transform">↗</span>
+          <span class="text-brand-mint group-hover:translate-x-1 transition-transform text-sm">↗</span>
         </a>
 
         <a href="https://linkedin.com/in/esraamibrahim" target="_blank" class="p-6 rounded-2xl bg-brand-card border border-brand-border hover:border-brand-mint/40 transition flex items-center justify-between group block">
           <div>
-            <p class="text-slate-500 uppercase tracking-widest text-[10px]">LinkedIn Network</p>
+            <p class="text-slate-500 uppercase tracking-widest text-[10px]">Professional Network</p>
             <p class="text-sm font-bold text-white font-sans mt-1">linkedin.com/in/esraamibrahim</p>
           </div>
-          <span class="text-brand-mint group-hover:translate-x-1 transition-transform">↗</span>
+          <span class="text-brand-mint group-hover:translate-x-1 transition-transform text-sm">↗</span>
+        </a>
+
+        <a href="https://github.com/EsraaMIbrahim" target="_blank" class="p-6 rounded-2xl bg-brand-card border border-brand-border hover:border-brand-mint/40 transition flex items-center justify-between group block">
+          <div>
+            <p class="text-slate-500 uppercase tracking-widest text-[10px]">Source Repositories</p>
+            <p class="text-sm font-bold text-white font-sans mt-1">github.com/EsraaMIbrahim</p>
+          </div>
+          <span class="text-brand-mint group-hover:translate-x-1 transition-transform text-sm">↗</span>
         </a>
       </div>
 
     </div>
 
     <div class="mt-24 pt-8 border-t border-brand-border flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 font-mono gap-4">
-      <p>© 2026 Esraa Ibrahim. Precision-built.</p>
+      <p>© 2026 Esraa Ibrahim. Engineered with precision.</p>
       <a href="#" class="hover:text-brand-mint transition">Back to Top ↑</a>
     </div>
   </footer>
